@@ -19,3 +19,21 @@ class BlogListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Blog
         fields = ('username', 'title', 'body', 'date')
+
+
+# 写一个反序列化器
+class BlogObjectSerializer(serializers.Serializer):
+    username = serializers.CharField(max_length=32)
+    title = serializers.CharField(max_length=32, required=True)
+    body = serializers.CharField(max_length=1000)
+    date = serializers.DateTimeField()
+    owner = serializers.CharField()
+
+    def create(self, validated_data):
+        return Blog(**validated_data)
+
+    def update(self, instance, validated_data):
+        print('test\n\n')
+        instance.title = validated_data.get('title', instance.title)
+        instance.body = validated_data.get('body', instance.body)
+        return instance
