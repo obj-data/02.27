@@ -1,24 +1,21 @@
 <template>
-  <div class="home">
-    <show-blog :data = blogs></show-blog>
-  </div>
+<div class="index">
+  <show-blog :data="blogs"></show-blog>
+</div>
 </template>
 
 <script>
-// @ is an alias to /src
-import { reactive, ref } from 'vue'
-import { request } from '../network/request'
-import ShowBlog from './showBlog/ShowBlog.vue'
+import {reactive} from 'vue'
+import {request} from '../../network/request'
+import showBlog from '../showBlog/ShowBlog.vue'
 export default {
-  components: { ShowBlog },
-  name: 'Home',
-  comments:{
-    ShowBlog,
-  },
-  setup(){
+  components: { showBlog },
+  comments:{showBlog},
+  name: 'MyBlog',
+  setup() {
     let blogs = reactive([])
     let res = request({
-    url:'blog/list/',
+    url:'/blog/userblog/',
     method: 'get',
     }).then(res=>{
       for (let i in res){
@@ -33,13 +30,13 @@ export default {
       blogs
     }
   }
-
 }
 </script>
 
 <style lang="scss" scoped>
-.home{
-  color: #fff;
+.index{
+  // color: #fff;
   padding-bottom: 20%;
 }
+
 </style>

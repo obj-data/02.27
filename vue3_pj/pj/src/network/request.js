@@ -12,10 +12,13 @@ export function request(config) {
     // 如果有一些请求需要认证才可以访问， 搁这统一设置
     
     // 暂时不定义直接返回
+    if (localStorage.getItem('token')!=null){
+      config.headers = {'Authorization':localStorage.getItem('token')}
+    }
     return config
   },
   err=>{
-    console.log(err);
+    console.log(err, '请求时');
   }
   )
   // 响应拦截
@@ -26,7 +29,8 @@ export function request(config) {
     // 如果有需要授权才可以访问的接口， 统一去login授权
 
     // 如果有错误，这里会去处理， 显示错误信息
-    console.log(err);
+    return err.response.data
+    
   }
   )
   return instance(config)
