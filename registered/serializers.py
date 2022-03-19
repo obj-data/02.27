@@ -25,10 +25,9 @@ class UserCreateSerializer(serializers.ModelSerializer):
         password = validated_data['password']
         password2 = validated_data['password2']
         if email and User.objects.filter(email=email).exclude(username=username).exists():  # 防止邮箱重复
-            raise serializers.ValidationError({'email': '邮箱不允许重复'})
+            raise serializers.ValidationError('邮箱不允许重复')
         if password2 != password:
-            raise serializers.ValidationError({'password': '两次输入的密码不一致'})
+            raise serializers.ValidationError('两次输入的密码不一致')
         user = User(username=username, email=email)
         user.set_password(password)
         user.save()
-        return user

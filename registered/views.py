@@ -1,3 +1,5 @@
+import re
+
 from django.shortcuts import render
 
 # Create your views here.
@@ -22,11 +24,9 @@ def registered(request):
         return response.Response('邮箱已存在', status=status.HTTP_400_BAD_REQUEST)
     serializer = UserCreateSerializer(data=request.data)
     if not serializer.is_valid():
+        if re.findall(".*string='(.*?)'", str(serializer.errors))[0] == 'Enter a valid email address.':
+            return response.Response('请输入正确的邮箱!', status=status.HTTP_400_BAD_REQUEST)
         return response.Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-    user = serializer.save()
-    # refresh = RefreshToken.for_user(user)
-    # res = {
-    #     'refresh': str(refresh),
-    #     'access':  str(refresh.access_token)
-    # }
+    serializer.save()
+
     return response.Response(True, status=status.HTTP_201_CREATED)

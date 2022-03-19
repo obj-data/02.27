@@ -27,7 +27,6 @@ export function request(config) {
   },
   err=>{
     // 如果有需要授权才可以访问的接口， 统一去login授权
-
     // 如果有错误，这里会去处理， 显示错误信息
     return err.response.data
     

@@ -56,19 +56,28 @@ export default defineComponent({
         url: 'registered/',
         data: user
       }).then(res=>{
-        if (res){
-          
-        }
-        massage.value = res
-        show.value = true
-      })
+        if (res==true){
       // 注册成功自动登录，登陆成功重定向到主页
       const loginUser = {'username':user.username,'password': user.password }
       Login(loginUser).then(res=>{
-        if (Object.values(res)[0] == 'True'){
+        // 如果返回值为true重定向到首页
+        if (res==true){
           window.location.replace('home/')
         }
       })
+        }else{
+        if (typeof(res) == 'object'){
+          res = res[0]
+        }
+        // 如果不是true则显示msg信息
+        massage.value = res
+        show.value = true
+        setTimeout(()=>{
+            show.value = false
+          }, 2000)
+          }
+      })
+      
       
     }
    
@@ -101,15 +110,15 @@ export default defineComponent({
   }
   .msg{
     width: 50%;
-    height: 20px;
+    // height: 20px;
     text-align: center;
     background-color: rgb(219, 24, 24);
     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     color: #fff;
     margin: 5% auto 0;
-    font-size: 12px;
-    padding: 0 20px;
+    font-size: 5px;
+    padding: 5px 20px;
   }
 }
 

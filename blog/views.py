@@ -34,7 +34,6 @@ class BlogUserList(generics.ListAPIView):
     serializer_class = BlogSerializer
 
     def post(self, request):
-        print(request.user)
         serializer = None
         if test_user(request):
             serializer = test_user(request=request)

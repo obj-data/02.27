@@ -1,6 +1,8 @@
 <template>
+<div class="MyBlog">
 <div class="index">
   <show-blog :data="blogs"></show-blog>
+</div>
 </div>
 </template>
 
@@ -34,7 +36,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.index{
+.MyBlog{
   // color: #fff;
   padding-bottom: 20%;
 }

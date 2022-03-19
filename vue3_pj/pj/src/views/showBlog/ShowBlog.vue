@@ -1,6 +1,6 @@
 <template>
   <div class="index">
-    <div class="blog-list">
+    <div class="blog-list" v-if="data.length!=0">
       <div class="blog" v-for="i in data" :key="i.title">
         <h2 @click="getKey(i.title)">{{i.title}}</h2>
         <div class="body">{{i.body}}</div>
@@ -8,11 +8,14 @@
         <span class="date">{{i.date}}</span>
       </div>
     </div>
+    <div v-else style="background-color: #fff;">
+      <h1 style="margin:50%;">空空如也</h1>
+    </div>
   </div>
 </template>
 
 <script>
-import { reactive, toRefs } from 'vue'
+import { reactive, ref, toRaw } from 'vue'
 import { useRoute, useRouter} from 'vue-router'
 export default {
   name: 'ShowBlog',
@@ -27,7 +30,7 @@ export default {
       const route = useRoute() //获取到值
 
     const getKey = (key) => {
-      // console.log(key);
+      // 监视点击的博客标题，携带标题进行请求
       router.push({
         path:'/blog',
         query:{
@@ -38,7 +41,7 @@ export default {
     }
     
     return {
-      getKey
+      getKey,
     }
   }
 }
