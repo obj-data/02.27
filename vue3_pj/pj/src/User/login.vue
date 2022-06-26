@@ -47,6 +47,7 @@ export default {
           massage.value = i+' 数据为空'
           setTimeout(()=>{
             show.value = false
+            // 等待两秒自动关闭错误信息显示
           }, 2000)
           return 
         }

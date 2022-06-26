@@ -9,13 +9,16 @@
   },
   "dependencies": {
     "@element-plus/icons-vue": "^1.1.1",
+    "@moefe/vue-aplayer": "^2.0.0-beta.5",
     "@tinymce/tinymce-vue": "^4.0.7",
     "@vueup/vue-quill": "^1.0.0-beta.8",
     "axios": "^0.26.0",
     "core-js": "^3.6.5",
     "element-plus": "^2.1.0",
+    "hls.js": "^1.1.5",
     "scss": "^0.2.4",
     "vue": "^3.0.0",
+    "vue-aplayer": "^1.6.1",
     "vue-axios": "^3.4.1",
     "vue-cookies": "^1.7.4",
     "vue-router": "^4.0.0-0",
@@ -34,5 +37,9 @@
     "less": "^4.1.2",
     "sass": "^1.49.9",
     "sass-loader": "^8.0.2"
-  }
+  },
+  "description": "## Project setup ``` npm install ```",
+  "main": ".eslintrc.js",
+  "author": "",
+  "license": "ISC"
 }

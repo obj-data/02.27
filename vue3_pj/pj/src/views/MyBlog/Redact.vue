@@ -45,7 +45,6 @@ export default {
       })
     }
     const RedactBlog = () =>{
-      console.log(blog.body);
       if (title){
         request({
           url:'/blog/detail/'+title+'/',
@@ -61,13 +60,13 @@ export default {
           })
         })
       }else{
-    console.log(blog.body);
         request({
           url:'/blog/userblog/',
           method:'POST',
           data: blog
         }).then(res=>{
-          ElMessageBox.alert('创建博客成功', 'Title',{
+          console.log(res['title'] == 'true');
+          ElMessageBox.alert('创建博客成功',res, 'Title',{
             confirmButtonText: '回到首页',
             callback:(Action)=>{
             window.location.replace('/home')

@@ -5,6 +5,7 @@ export const Login = (user) =>{
   const requests = axios.post(
     'api/login/',user
   ).then(res=>{
+    // 缓存token和用户名
     localStorage.setItem('token',res.data.token)
     localStorage.setItem('username', user.username)
     return true

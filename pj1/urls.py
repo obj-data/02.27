@@ -22,6 +22,7 @@ urlpatterns = [
     path('blog/', include('blog.urls')),
     path('docs/', include_docs_urls(title='测试接口')),
     path('registered/', include('registered.urls')),
+    path('music/', include('music.urls')),
     path('login/', obtain_jwt_token),
     path('api-auth/', include('rest_framework.urls')),
 ]

@@ -19,7 +19,8 @@
     </el-sub-menu>
     <!-- <el-menu-item index="3" disabled>Info</el-menu-item> -->
     <el-menu-item index="4" v-if="!userState"><router-link to="/redact" >新建博客</router-link></el-menu-item>
-    <el-menu-item index="4" v-else   >新建博客</el-menu-item>
+    <el-menu-item index="4" v-else disabled>新建博客</el-menu-item>
+    <el-menu-item index="5"><router-link to="/music"  class="index">音乐</router-link></el-menu-item>
   </el-menu>
     <router-view/>
   </div>

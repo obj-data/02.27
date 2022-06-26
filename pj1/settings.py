@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'blog',
     'rest_framework',
     'registered',
-    # 'rest_framework.authtoken',  # token
+    'music'
 ]
 
 MIDDLEWARE = [
@@ -147,5 +147,5 @@ REST_FRAMEWORK = {
 JWT_AUTH = {
     'JWT_EXPIRATION_DELTA': datetime.timedelta(days=7),  # token 有效期为一个星期
     'JWT_AUTH_HEADER_PREFIX': 'JWT',  # token 头为  ： JWT adashkjbhaskjhd21312312
-    'JWT_ALLOW_REFRESH': False,
+    'JWT_ALLOW_REFRESH': False,  # 不刷新
 }

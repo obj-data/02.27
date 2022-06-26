@@ -18,6 +18,7 @@ export default {
     ShowBlog,
   },
   setup(){
+
     let boo = ref(true)
     let blogs = reactive([])
     let res = request({
@@ -25,6 +26,11 @@ export default {
     method: 'get',
     }).then(res=>{
       if (res){
+        // 去html标签
+        for (let n in res){
+          res[n].body = res[n].body.replace(/<[^>]+>/g, '')
+        }
+       // 解析时间戳
       for (let i in res){
         let T = res[i].date.indexOf('T')
         let date = res[i].date.substr(0, T)

@@ -34,6 +34,11 @@ const routes = [
     path:'/redact',
     name: 'Redact',
     component: () => import('../views/MyBlog/Redact.vue')
+  },
+  {
+    path:'/music',
+    name:'Music',
+    component: () => import('../views/musics/Music.vue')
   }
 
 ]
