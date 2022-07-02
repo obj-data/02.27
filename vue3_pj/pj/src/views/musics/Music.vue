@@ -1,20 +1,25 @@
 <template>
   <div class="index">
-<audio id="myAudio" @ended="overAudio" @timeupdate="" controls>
+    {{name}}
+<audio id="myAudio"  @ended="overAudio"  controls>
   <source v-if="url"  :src='url'  type="audio/mpeg">
-  <!-- <source v-if="url" type="audio/mpeg"> -->
 </audio>
+
   </div>
 </template>
 
 <script>
 import { reactive, ref } from 'vue'
 import { request } from '../../network/request'
+import { useRoute} from 'vue-router'
 const audio = new Audio()
 
 export default {
   setup() {
+    const name = useRoute().query.name
+    console.log(useRoute().query);
     let url = ref(null)
+    let tar = ref(true)
     let num = ref(1)
     let list = ref(null)
     let time = ref(null)
@@ -26,6 +31,9 @@ export default {
     url.value = 'http://127.0.0.1:8000/music/list/' + res.names[0]
 
       })
+    const test = () => {
+      console.log('已执行test');
+    }
 
     let overAudio = () =>
     {
@@ -33,23 +41,20 @@ export default {
     num.value ++
     audio.src = url
     audio.load()
-    audio.oncanplay = () =>{
-      time.value = audio.duration 
-      setTimeout(()=>{
-        console.log(audio.ended);
-      }, 1000)
-      let state = audio.play()
-      
-      
-    }
+    console.log(url);
+    tar.value = !tar.value
+    // let state = audio.play()
 
     }
    
     return {
       url,
       overAudio,
-      time
-    }
+      time,
+      tar,
+      test,
+      name
+}
   },
 }
 
