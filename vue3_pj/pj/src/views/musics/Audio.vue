@@ -37,10 +37,10 @@ export default {
       context.emit('eventEnd',(nextName)=>{
         audio.src = 'http://127.0.0.1:8000/music/list/'+nextName
         localStorage.setItem('MusicName', nextName)
-
       })
       audio.autoplay = true
       audio.play()
+      playBoo.value = !playBoo.value
     })
     return{
       name,
