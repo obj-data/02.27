@@ -1,9 +1,9 @@
 <template>
+<!-- 歌曲信息页面 -->
+<h3 style="color:#FFF;margin: 0 40%;" :key="i" v-for="i in [...Array(50).keys()]">歌曲详情页面</h3>
+<Player @eventEnd="endMusic" :name="name" class="player"/>
+
   <div class="index">
-    {{name}}
-<audio id="myAudio"  @ended="overAudio"  controls>
-  <source v-if="url"  :src='url'  type="audio/mpeg">
-</audio>
 
   </div>
 </template>
@@ -12,48 +12,32 @@
 import { reactive, ref } from 'vue'
 import { request } from '../../network/request'
 import { useRoute} from 'vue-router'
-const audio = new Audio()
+import  Player  from './Audio.vue'
+import { isUndefined } from 'element-plus/es/utils'
+// const audio = new Audio()
 
 export default {
+  components:{
+    Player
+  },
   setup() {
-    const name = useRoute().query.name
-    console.log(useRoute().query);
-    let url = ref(null)
+    let name =  isUndefined(localStorage.getItem('MusicName')) ? localStorage.getItem('MusicName') : useRoute().query.name
+    const list = useRoute().query.list
+    let url = ref('http://127.0.0.1:8000/music/list/'+name)
     let tar = ref(true)
-    let num = ref(1)
-    let list = ref(null)
+    let num = ref(0)
     let time = ref(null)
-    let res = request({
-    url:'/music/list/',
-    method: 'get',
-    }).then(res=>{
-      list.value = res.names
-    url.value = 'http://127.0.0.1:8000/music/list/' + res.names[0]
 
-      })
-    const test = () => {
-      console.log('已执行test');
-    }
-
-    let overAudio = () =>
-    {
-    url = 'http://127.0.0.1:8000/music/list/' + list.value[num.value]
-    num.value ++
-    audio.src = url
-    audio.load()
-    console.log(url);
-    tar.value = !tar.value
-    // let state = audio.play()
+    const endMusic = (back) =>{
+      console.log(localStorage.getItem('MusicName'), '播放完毕后');
+      if (list.indexOf(localStorage.getItem('MusicName'))+1 != length(list)){
+      back(list[list.indexOf(localStorage.getItem('MusicName'))+1])}else{useRoute.query.name}
 
     }
    
     return {
-      url,
-      overAudio,
-      time,
-      tar,
-      test,
-      name
+      name,
+      endMusic
 }
   },
 }
@@ -63,11 +47,18 @@ export default {
 
 <style lang="scss">
 .index{
+  color:#FFF;
   height: 900px;
   width: 100%;
+  
   audio{
     margin: 450px 40%;
   }
 }
+.player{
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  }
   
 </style>

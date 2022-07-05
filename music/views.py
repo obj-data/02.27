@@ -9,7 +9,6 @@ import base64
 
 filePath = r"D:\musics"
 
-
 @api_view(['GET'])
 def music_list(request):
     names = []
