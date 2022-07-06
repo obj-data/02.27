@@ -15,7 +15,7 @@ export default {
   setup(props,context) {
         // 创建audio实例
     let name = props.name
-    let url = ref('http://127.0.0.1:8000/music/list/'+name)
+    let url = ref('http://106.13.232.207:8000/music/list/'+name)
     let playBoo = ref(true)
     const audio = new Audio(url.value) 
     // audio.play()
@@ -35,7 +35,7 @@ export default {
     audio.addEventListener('ended',()=>{
       let nextName = null
       context.emit('eventEnd',(nextName)=>{
-        audio.src = 'http://127.0.0.1:8000/music/list/'+nextName
+        audio.src = 'http://106.13.232.207:8000/music/list/'+nextName
         localStorage.setItem('MusicName', nextName)
       })
       audio.autoplay = true

@@ -79,7 +79,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'pj1',
         'IP': 'localhost',
-        'PORT': 3307,
+        'PORT': 3306,
         'USER': 'root',
         'PASSWORD': '123456',
     }
@@ -149,3 +149,4 @@ JWT_AUTH = {
     'JWT_AUTH_HEADER_PREFIX': 'JWT',  # token 头为  ： JWT adashkjbhaskjhd21312312
     'JWT_ALLOW_REFRESH': False,  # 不刷新
 }
+ALLOWED_HOSTS = ['*']

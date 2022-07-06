@@ -7,7 +7,7 @@ from rest_framework import status
 from rest_framework.decorators import api_view
 import base64
 
-filePath = r"D:\musics"
+filePath = r"/root/demo/musics"
 
 @api_view(['GET'])
 def music_list(request):
@@ -15,7 +15,7 @@ def music_list(request):
     # 获取文件夹下的所有mp3文件名
     for i, j, k in os.walk(filePath):
         for name in k:
-            names.append(name[2::]) if "mp3" in name else False
+            names.append(name[2::] if '._' in name else name) if "mp3" in name else False
     body = {"names": names}
     return Response(body)
 
@@ -29,7 +29,7 @@ def music(request, name):
     :return: 歌曲字节
     '''
     print(name)
-    music = open(filePath + "\\" + name, 'rb')
+    music = open(filePath + "/" + name, 'rb')
     response = FileResponse(music)
     response['Content-Type'] = 'application/octet-stream'
     response['Content-Disposition'] = "attachment;filename=music.mp3"

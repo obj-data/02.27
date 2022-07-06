@@ -9,7 +9,7 @@ module.exports = {   // 关闭严格模式
     proxy: {
     // 配置跨域
       '/api': {
-        target: 'http://localhost:8000',
+        target: 'http://106.13.232.207:8000',
         ws: true,
         changeOrigin: true, //允许跨域
         pathRewrite: {

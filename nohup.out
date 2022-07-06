@@ -1,0 +1,524 @@
+Watching for file changes with StatReloader
+Invalid HTTP_HOST header: '106.13.232.207:8000'. You may need to add '106.13.232.207' to ALLOWED_HOSTS.
+Bad Request: /
+[06/Jul/2022 02:30:49] "GET / HTTP/1.1" 400 64201
+Invalid HTTP_HOST header: '106.13.232.207:8000'. You may need to add '106.13.232.207' to ALLOWED_HOSTS.
+Bad Request: /
+[06/Jul/2022 02:30:49] "GET / HTTP/1.1" 400 63677
+Invalid HTTP_HOST header: '106.13.232.207:8000'. You may need to add '106.13.232.207' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[06/Jul/2022 02:30:54] "GET /favicon.ico HTTP/1.1" 400 64322
+Invalid HTTP_HOST header: '106.13.232.207:8000'. You may need to add '106.13.232.207' to ALLOWED_HOSTS.
+Bad Request: /blog/list/
+[06/Jul/2022 02:32:29] "GET /blog/list/ HTTP/1.1" 400 64941
+Invalid HTTP_HOST header: '106.13.232.207:8000'. You may need to add '106.13.232.207' to ALLOWED_HOSTS.
+Bad Request: /music/list/
+[06/Jul/2022 02:32:34] "GET /music/list/ HTTP/1.1" 400 64962
+Invalid HTTP_HOST header: '106.13.232.207:8000'. You may need to add '106.13.232.207' to ALLOWED_HOSTS.
+Bad Request: /blog/list/
+[06/Jul/2022 02:32:37] "GET /blog/list/ HTTP/1.1" 400 64941
+/root/demo/blogPJ_gx/music/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 06, 2022 - 02:30:00
+Django version 3.2.13, using settings 'pj1.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Invalid HTTP_HOST header: '106.13.232.207:8000'. You may need to add '106.13.232.207' to ALLOWED_HOSTS.
+Bad Request: /blog/list/
+[06/Jul/2022 03:05:41] "GET /blog/list/ HTTP/1.1" 400 64927
+Invalid HTTP_HOST header: '106.13.232.207:8000'. You may need to add '106.13.232.207' to ALLOWED_HOSTS.
+Bad Request: /music/list/
+[06/Jul/2022 03:05:44] "GET /music/list/ HTTP/1.1" 400 64948
+Invalid HTTP_HOST header: '106.13.232.207:8000'. You may need to add '106.13.232.207' to ALLOWED_HOSTS.
+Bad Request: /blog/list/
+[06/Jul/2022 03:05:49] "GET /blog/list/ HTTP/1.1" 400 64927
+Invalid HTTP_HOST header: '106.13.232.207:8000'. You may need to add '106.13.232.207' to ALLOWED_HOSTS.
+Bad Request: /blog/list/
+[06/Jul/2022 03:05:52] "GET /blog/list/ HTTP/1.1" 400 64927
+Invalid HTTP_HOST header: '106.13.232.207:8000'. You may need to add '106.13.232.207' to ALLOWED_HOSTS.
+Bad Request: /music/list/
+[06/Jul/2022 03:05:58] "GET /music/list/ HTTP/1.1" 400 64948
+Invalid HTTP_HOST header: '106.13.232.207:8000'. You may need to add '106.13.232.207' to ALLOWED_HOSTS.
+Bad Request: /blog/list/
+[06/Jul/2022 03:05:59] "GET /blog/list/ HTTP/1.1" 400 64927
+Watching for file changes with StatReloader
+Not Found: /
+[06/Jul/2022 13:50:12] "GET / HTTP/1.1" 404 2703
+Not Found: /favicon.ico
+[06/Jul/2022 13:50:12] "GET /favicon.ico HTTP/1.1" 404 2754
+Not Found: /
+[06/Jul/2022 14:04:21] "GET / HTTP/1.1" 404 2696
+[06/Jul/2022 14:15:20] "GET /blog/list/ HTTP/1.1" 200 99
+[06/Jul/2022 14:17:07] "GET /blog/list/ HTTP/1.1" 200 99
+[06/Jul/2022 14:17:08] "GET /music/list/ HTTP/1.1" 200 1457
+[06/Jul/2022 14:17:11] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3 HTTP/1.1" 301 0
+[06/Jul/2022 14:17:11] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3/ HTTP/1.1" 200 303104
+[06/Jul/2022 14:17:15] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3 HTTP/1.1" 301 0
+[06/Jul/2022 14:17:23] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3/ HTTP/1.1" 200 3895296
+[06/Jul/2022 14:17:32] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3 HTTP/1.1" 301 0
+[06/Jul/2022 14:17:42] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3/ HTTP/1.1" 200 4902912
+[06/Jul/2022 14:17:58] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3 HTTP/1.1" 301 0
+[06/Jul/2022 14:18:12] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3/ HTTP/1.1" 200 5955584
+[06/Jul/2022 14:18:25] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3 HTTP/1.1" 301 0
+[06/Jul/2022 14:18:40] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3/ HTTP/1.1" 200 7245824
+[06/Jul/2022 14:18:52] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3 HTTP/1.1" 301 0
+[06/Jul/2022 14:19:12] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3/ HTTP/1.1" 200 8159232
+[06/Jul/2022 14:19:19] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3 HTTP/1.1" 301 0
+[06/Jul/2022 14:19:41] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3/ HTTP/1.1" 200 9162752
+[06/Jul/2022 14:19:45] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3 HTTP/1.1" 301 0
+[06/Jul/2022 14:21:03] "GET /music/list/15pm%20-%20Intro.mp3 HTTP/1.1" 301 0
+Internal Server Error: /music/list/15pm - Intro.mp3/
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/root/demo/blogPJ_gx/music/views.py", line 32, in music
+    music = open(filePath + "/" + name, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/root/demo/musics/15pm - Intro.mp3'
+[06/Jul/2022 14:21:03] "GET /music/list/15pm%20-%20Intro.mp3/ HTTP/1.1" 500 89191
+[06/Jul/2022 14:21:16] "GET /music/list/ HTTP/1.1" 200 1457
+[06/Jul/2022 14:21:18] "GET /music/list/15pm%20-%20Intro.mp3 HTTP/1.1" 301 0
+Internal Server Error: /music/list/15pm - Intro.mp3/
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/root/demo/blogPJ_gx/music/views.py", line 32, in music
+    music = open(filePath + "/" + name, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/root/demo/musics/15pm - Intro.mp3'
+[06/Jul/2022 14:21:18] "GET /music/list/15pm%20-%20Intro.mp3/ HTTP/1.1" 500 89191
+[06/Jul/2022 14:21:37] "GET /music/list/ HTTP/1.1" 200 1457
+[06/Jul/2022 14:21:39] "GET /music/list/ HTTP/1.1" 200 1457
+[06/Jul/2022 14:21:47] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3 HTTP/1.1" 301 0
+[06/Jul/2022 14:21:48] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3/ HTTP/1.1" 200 81920
+[06/Jul/2022 14:21:49] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3 HTTP/1.1" 301 0
+[06/Jul/2022 14:21:57] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3/ HTTP/1.1" 200 3772416
+[06/Jul/2022 14:21:58] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3 HTTP/1.1" 301 0
+[06/Jul/2022 14:22:09] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3/ HTTP/1.1" 200 4857856
+[06/Jul/2022 14:22:25] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3 HTTP/1.1" 301 0
+[06/Jul/2022 14:22:39] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3/ HTTP/1.1" 200 5697536
+[06/Jul/2022 14:22:52] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3 HTTP/1.1" 301 0
+[06/Jul/2022 14:23:08] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3/ HTTP/1.1" 200 6909952
+[06/Jul/2022 14:23:19] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3 HTTP/1.1" 301 0
+[06/Jul/2022 14:23:36] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3/ HTTP/1.1" 200 7983104
+[06/Jul/2022 14:23:46] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3 HTTP/1.1" 301 0
+[06/Jul/2022 14:24:04] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3/ HTTP/1.1" 200 9183232
+[06/Jul/2022 14:24:12] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3 HTTP/1.1" 301 0
+[06/Jul/2022 14:24:34] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3/ HTTP/1.1" 200 10141585
+[06/Jul/2022 14:24:39] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3 HTTP/1.1" 301 0
+[06/Jul/2022 14:25:00] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3/ HTTP/1.1" 200 10141585
+[06/Jul/2022 14:25:56] "GET /music/list/15pm%20-%20Intro.mp3 HTTP/1.1" 301 0
+Internal Server Error: /music/list/15pm - Intro.mp3/
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/root/demo/blogPJ_gx/music/views.py", line 32, in music
+    music = open(filePath + "/" + name, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/root/demo/musics/15pm - Intro.mp3'
+[06/Jul/2022 14:25:56] "GET /music/list/15pm%20-%20Intro.mp3/ HTTP/1.1" 500 89191
+[06/Jul/2022 14:26:17] "GET /music/list/ HTTP/1.1" 200 1457
+[06/Jul/2022 14:26:20] "GET /music/list/15pm%20-%20Intro.mp3 HTTP/1.1" 301 0
+Internal Server Error: /music/list/15pm - Intro.mp3/
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/root/demo/blogPJ_gx/music/views.py", line 32, in music
+    music = open(filePath + "/" + name, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/root/demo/musics/15pm - Intro.mp3'
+[06/Jul/2022 14:26:20] "GET /music/list/15pm%20-%20Intro.mp3/ HTTP/1.1" 500 89191
+[06/Jul/2022 14:26:27] "GET /music/list/15pm%20-%20Intro.mp3 HTTP/1.1" 301 0
+Internal Server Error: /music/list/15pm - Intro.mp3/
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/root/demo/blogPJ_gx/music/views.py", line 32, in music
+    music = open(filePath + "/" + name, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/root/demo/musics/15pm - Intro.mp3'
+[06/Jul/2022 14:26:28] "GET /music/list/15pm%20-%20Intro.mp3/ HTTP/1.1" 500 89191
+[06/Jul/2022 14:26:32] "GET /music/list/ HTTP/1.1" 200 1457
+[06/Jul/2022 14:26:35] "GET /music/list/ HTTP/1.1" 200 1457
+[06/Jul/2022 14:26:36] "GET /music/list/%E8%90%AC%E6%AD%B2.mp3 HTTP/1.1" 301 0
+Internal Server Error: /music/list/萬歲.mp3/
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/root/demo/blogPJ_gx/music/views.py", line 32, in music
+    music = open(filePath + "/" + name, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/root/demo/musics/萬歲.mp3'
+[06/Jul/2022 14:26:36] "GET /music/list/%E8%90%AC%E6%AD%B2.mp3/ HTTP/1.1" 500 89119
+[06/Jul/2022 14:27:08] "GET /music/list/ HTTP/1.1" 200 1457
+[06/Jul/2022 14:27:11] "GET /music/list/%E4%B8%80%E5%80%8B%E9%9D%88%E9%AD%82%E7%9A%84%E7%8D%A8%E7%99%BD.mp3 HTTP/1.1" 301 0
+[06/Jul/2022 14:27:11] "GET /music/list/%E4%B8%80%E5%80%8B%E9%9D%88%E9%AD%82%E7%9A%84%E7%8D%A8%E7%99%BD.mp3/ HTTP/1.1" 200 151552
+[06/Jul/2022 14:27:13] "GET /music/list/%E4%B8%80%E5%80%8B%E9%9D%88%E9%AD%82%E7%9A%84%E7%8D%A8%E7%99%BD.mp3 HTTP/1.1" 301 0
+[06/Jul/2022 14:27:14] "GET /music/list/ HTTP/1.1" 200 1457
+[06/Jul/2022 14:27:22] "GET /music/list/%E4%B8%80%E5%80%8B%E9%9D%88%E9%AD%82%E7%9A%84%E7%8D%A8%E7%99%BD.mp3/ HTTP/1.1" 200 4321280
+[06/Jul/2022 14:27:29] "GET /music/list/%E4%B8%80%E5%80%8B%E9%9D%88%E9%AD%82%E7%9A%84%E7%8D%A8%E7%99%BD.mp3 HTTP/1.1" 301 0
+[06/Jul/2022 14:27:42] "GET /music/list/%E4%B8%80%E5%80%8B%E9%9D%88%E9%AD%82%E7%9A%84%E7%8D%A8%E7%99%BD.mp3/ HTTP/1.1" 200 5480448
+[06/Jul/2022 14:27:56] "GET /music/list/%E4%B8%80%E5%80%8B%E9%9D%88%E9%AD%82%E7%9A%84%E7%8D%A8%E7%99%BD.mp3 HTTP/1.1" 301 0
+[06/Jul/2022 14:28:09] "GET /music/list/%E4%B8%80%E5%80%8B%E9%9D%88%E9%AD%82%E7%9A%84%E7%8D%A8%E7%99%BD.mp3/ HTTP/1.1" 200 6213632
+[06/Jul/2022 14:28:23] "GET /music/list/%E4%B8%80%E5%80%8B%E9%9D%88%E9%AD%82%E7%9A%84%E7%8D%A8%E7%99%BD.mp3 HTTP/1.1" 301 0
+[06/Jul/2022 14:28:40] "GET /music/list/%E4%B8%80%E5%80%8B%E9%9D%88%E9%AD%82%E7%9A%84%E7%8D%A8%E7%99%BD.mp3/ HTTP/1.1" 200 7446528
+[06/Jul/2022 14:28:49] "GET /music/list/%E4%B8%80%E5%80%8B%E9%9D%88%E9%AD%82%E7%9A%84%E7%8D%A8%E7%99%BD.mp3 HTTP/1.1" 301 0
+[06/Jul/2022 14:29:08] "GET /music/list/%E4%B8%80%E5%80%8B%E9%9D%88%E9%AD%82%E7%9A%84%E7%8D%A8%E7%99%BD.mp3/ HTTP/1.1" 200 8331264
+[06/Jul/2022 14:29:15] "GET /music/list/%E4%B8%80%E5%80%8B%E9%9D%88%E9%AD%82%E7%9A%84%E7%8D%A8%E7%99%BD.mp3 HTTP/1.1" 301 0
+[06/Jul/2022 14:29:36] "GET /music/list/%E4%B8%80%E5%80%8B%E9%9D%88%E9%AD%82%E7%9A%84%E7%8D%A8%E7%99%BD.mp3/ HTTP/1.1" 200 9408512
+[06/Jul/2022 14:29:42] "GET /music/list/%E4%B8%80%E5%80%8B%E9%9D%88%E9%AD%82%E7%9A%84%E7%8D%A8%E7%99%BD.mp3 HTTP/1.1" 301 0
+[06/Jul/2022 14:30:06] "GET /music/list/%E4%B8%80%E5%80%8B%E9%9D%88%E9%AD%82%E7%9A%84%E7%8D%A8%E7%99%BD.mp3/ HTTP/1.1" 200 10665984
+[06/Jul/2022 14:30:09] "GET /music/list/%E4%B8%80%E5%80%8B%E9%9D%88%E9%AD%82%E7%9A%84%E7%8D%A8%E7%99%BD.mp3 HTTP/1.1" 301 0
+[06/Jul/2022 14:30:32] "GET /music/list/%E4%B8%80%E5%80%8B%E9%9D%88%E9%AD%82%E7%9A%84%E7%8D%A8%E7%99%BD.mp3/ HTTP/1.1" 200 11554816
+[06/Jul/2022 14:30:35] "GET /music/list/%E4%B8%80%E5%80%8B%E9%9D%88%E9%AD%82%E7%9A%84%E7%8D%A8%E7%99%BD.mp3 HTTP/1.1" 301 0
+[06/Jul/2022 14:31:03] "GET /music/list/%E4%B8%80%E5%80%8B%E9%9D%88%E9%AD%82%E7%9A%84%E7%8D%A8%E7%99%BD.mp3/ HTTP/1.1" 200 12270368
+[06/Jul/2022 14:32:06] "GET /music/list/%E4%B8%80%E5%80%8B%E9%9D%88%E9%AD%82%E7%9A%84%E7%8D%A8%E7%99%BD.mp3 HTTP/1.1" 301 0
+[06/Jul/2022 14:32:14] "GET /music/list/%E4%B8%80%E5%80%8B%E9%9D%88%E9%AD%82%E7%9A%84%E7%8D%A8%E7%99%BD.mp3/ HTTP/1.1" 200 3436544
+[06/Jul/2022 14:36:34] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3/ HTTP/1.1" 200 7036928
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib64/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib64/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib64/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib64/python3.6/socketserver.py", line 803, in write
+    self._sock.sendall(b)
+TimeoutError: [Errno 110] Connection timed out
+[06/Jul/2022 14:36:34] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3/ HTTP/1.1" 500 59
+----------------------------------------
+Exception happened during processing of request from ('113.68.38.170', 28305)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib64/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib64/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib64/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib64/python3.6/socketserver.py", line 803, in write
+    self._sock.sendall(b)
+TimeoutError: [Errno 110] Connection timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/usr/local/lib64/python3.6/site-packages/django/core/servers/basehttp.py", line 123, in handle_error
+    super().handle_error()
+  File "/usr/lib64/python3.6/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/usr/lib64/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib64/python3.6/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/usr/lib64/python3.6/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/usr/lib64/python3.6/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/socketserver.py", line 654, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.6/socketserver.py", line 364, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.6/socketserver.py", line 724, in __init__
+    self.handle()
+  File "/usr/local/lib64/python3.6/site-packages/django/core/servers/basehttp.py", line 178, in handle
+    self.handle_one_request()
+  File "/usr/local/lib64/python3.6/site-packages/django/core/servers/basehttp.py", line 201, in handle_one_request
+    handler.run(self.server.get_app())
+  File "/usr/lib64/python3.6/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/usr/local/lib64/python3.6/site-packages/django/core/servers/basehttp.py", line 118, in close
+    super().close()
+  File "/usr/lib64/python3.6/wsgiref/simple_server.py", line 35, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+----------------------------------------
+[06/Jul/2022 16:01:28,838] - Broken pipe from ('167.94.138.44', 34960)
+
+Not Found: /
+[06/Jul/2022 16:01:30] "GET / HTTP/1.1" 404 2703
+[06/Jul/2022 16:01:30,310] - Broken pipe from ('167.94.138.44', 59402)
+
+Not Found: /
+[06/Jul/2022 16:01:30] "GET / HTTP/1.1" 404 2703
+[06/Jul/2022 16:01:31] code 505, message Invalid HTTP version (2.0)
+[06/Jul/2022 16:01:31] "PRI * HTTP/2.0" 505 -
+Not Found: /
+[06/Jul/2022 16:20:16] "GET / HTTP/1.1" 404 2703
+Not Found: /favicon.ico
+[06/Jul/2022 16:20:58] "GET /favicon.ico HTTP/1.1" 404 2754
+Not Found: /robots.txt
+[06/Jul/2022 16:21:12] "GET /robots.txt HTTP/1.1" 404 2751
+Not Found: /sitemap.xml
+[06/Jul/2022 16:21:29] "GET /sitemap.xml HTTP/1.1" 404 2754
+[06/Jul/2022 16:40:01] "GET /music/list/ HTTP/1.1" 200 1457
+[06/Jul/2022 16:40:12] "GET /blog/list/ HTTP/1.1" 200 99
+[06/Jul/2022 16:40:14] "GET /music/list/%E5%A4%A2%E7%9A%84%E5%8F%AF%E8%83%BD.mp3/ HTTP/1.1" 200 5738496
+[06/Jul/2022 16:40:15] "GET /blog/list/ HTTP/1.1" 200 99
+[06/Jul/2022 16:40:16] "GET /music/list/ HTTP/1.1" 200 1457
+[06/Jul/2022 16:40:17] "GET /music/list/15pm%20-%20Intro.mp3 HTTP/1.1" 301 0
+Internal Server Error: /music/list/15pm - Intro.mp3/
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/root/demo/blogPJ_gx/music/views.py", line 32, in music
+    music = open(filePath + "/" + name, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/root/demo/musics/15pm - Intro.mp3'
+[06/Jul/2022 16:40:17] "GET /music/list/15pm%20-%20Intro.mp3/ HTTP/1.1" 500 88877
+[06/Jul/2022 16:40:17,746] - Broken pipe from ('113.68.38.170', 29346)
+
+[06/Jul/2022 16:40:40] "GET /music/list/ HTTP/1.1" 200 1457
+Internal Server Error: /music/list/15pm - Intro.mp3/
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/root/demo/blogPJ_gx/music/views.py", line 32, in music
+    music = open(filePath + "/" + name, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/root/demo/musics/15pm - Intro.mp3'
+[06/Jul/2022 16:41:06] "GET /music/list/15pm%20-%20Intro.mp3/ HTTP/1.1" 500 88877
+[06/Jul/2022 16:41:06,161] - Broken pipe from ('113.68.38.170', 27242)
+
+[06/Jul/2022 16:41:32] "GET /blog/list/ HTTP/1.1" 200 99
+[06/Jul/2022 16:41:33] "GET /blog/list/ HTTP/1.1" 200 99
+[06/Jul/2022 16:41:35] "GET /music/list/ HTTP/1.1" 200 1457
+Internal Server Error: /music/list/15pm - Intro.mp3/
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/root/demo/blogPJ_gx/music/views.py", line 32, in music
+    music = open(filePath + "/" + name, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/root/demo/musics/15pm - Intro.mp3'
+[06/Jul/2022 16:41:36] "GET /music/list/15pm%20-%20Intro.mp3/ HTTP/1.1" 500 88877
+[06/Jul/2022 16:41:36,833] - Broken pipe from ('113.68.38.170', 29178)
+
+Internal Server Error: /music/list/15pm - Intro.mp3/
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/root/demo/blogPJ_gx/music/views.py", line 32, in music
+    music = open(filePath + "/" + name, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/root/demo/musics/15pm - Intro.mp3'
+[06/Jul/2022 16:41:51] "GET /music/list/15pm%20-%20Intro.mp3/ HTTP/1.1" 500 89016
+/root/demo/blogPJ_gx/music/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 06, 2022 - 13:50:04
+Django version 3.2.13, using settings 'pj1.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+夢的可能.mp3
+夢的可能.mp3
+夢的可能.mp3
+夢的可能.mp3
+夢的可能.mp3
+夢的可能.mp3
+夢的可能.mp3
+夢的可能.mp3
+15pm - Intro.mp3
+15pm - Intro.mp3
+夢的可能.mp3
+夢的可能.mp3
+夢的可能.mp3
+夢的可能.mp3
+夢的可能.mp3
+夢的可能.mp3
+夢的可能.mp3
+夢的可能.mp3
+夢的可能.mp3
+15pm - Intro.mp3
+15pm - Intro.mp3
+15pm - Intro.mp3
+萬歲.mp3
+一個靈魂的獨白.mp3
+一個靈魂的獨白.mp3
+一個靈魂的獨白.mp3
+一個靈魂的獨白.mp3
+一個靈魂的獨白.mp3
+一個靈魂的獨白.mp3
+一個靈魂的獨白.mp3
+一個靈魂的獨白.mp3
+一個靈魂的獨白.mp3
+一個靈魂的獨白.mp3
+一個靈魂的獨白.mp3
+夢的可能.mp3
+15pm - Intro.mp3
+15pm - Intro.mp3
+15pm - Intro.mp3
+15pm - Intro.mp3
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+[06/Jul/2022 16:46:39] "GET /music/list/ HTTP/1.1" 200 1717
+[06/Jul/2022 16:46:42] "GET /music/list/ HTTP/1.1" 200 1717
+[06/Jul/2022 16:46:47] "GET /music/list/8-15pm%20-%20Intro.mp3 HTTP/1.1" 301 0
+[06/Jul/2022 16:46:48] "GET /music/list/8-15pm%20-%20Intro.mp3/ HTTP/1.1" 200 759230
+[06/Jul/2022 16:47:13] "GET /music/list/%E6%88%91%E5%80%91%E8%90%AC%E6%AD%B2.mp3 HTTP/1.1" 301 0
+[06/Jul/2022 16:48:10] "GET /music/list/%E6%88%91%E5%80%91%E8%90%AC%E6%AD%B2.mp3/ HTTP/1.1" 200 9567228
