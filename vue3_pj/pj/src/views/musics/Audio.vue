@@ -16,11 +16,9 @@ export default {
         // 创建audio实例
     let name = props.name
     let url = ref('http://127.0.0.1:8000/music/list/'+name)
-    let playBoo = ref(true)
+    let playBoo = ref(false)
     const audio = new Audio(url.value) 
-    // audio.play()
-    // audio.controls = true
-    // audio.autoplay = true
+    audio.autoplay = true
 
     const play = () => {
       playBoo.value = !playBoo.value
@@ -33,9 +31,11 @@ export default {
       // console.log(String((audio.currentTime/audio.duration)*100).substr(0,4)+'%');
     }
     audio.addEventListener('ended',()=>{
+      playBoo.value = !playBoo.value
       let nextName = null
       context.emit('eventEnd',(nextName)=>{
         audio.src = 'http://127.0.0.1:8000/music/list/'+nextName
+        audio.load()
         localStorage.setItem('MusicName', nextName)
       })
       audio.autoplay = true

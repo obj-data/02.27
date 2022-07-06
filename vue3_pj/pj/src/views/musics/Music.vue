@@ -22,7 +22,14 @@ export default {
   },
   setup() {
     let name =  isUndefined(localStorage.getItem('MusicName')) ? localStorage.getItem('MusicName') : useRoute().query.name
-    const list = useRoute().query.list
+    let list = ref()
+    let res = request({
+    url:'/music/list/',
+    method: 'get',
+    }).then(res=>{
+      list.value = res.names
+
+      })
     let url = ref('http://127.0.0.1:8000/music/list/'+name)
     let tar = ref(true)
     let num = ref(0)
@@ -30,8 +37,8 @@ export default {
 
     const endMusic = (back) =>{
       console.log(localStorage.getItem('MusicName'), '播放完毕后');
-      if (list.indexOf(localStorage.getItem('MusicName'))+1 != length(list)){
-      back(list[list.indexOf(localStorage.getItem('MusicName'))+1])}else{useRoute.query.name}
+      if (list.value.indexOf(localStorage.getItem('MusicName'))+1 != list.value.length){
+      back(list.value[list.value.indexOf(localStorage.getItem('MusicName'))+1])}else{useRoute.query.name}
 
     }
    

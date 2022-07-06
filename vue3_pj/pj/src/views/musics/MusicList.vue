@@ -22,16 +22,13 @@ export default {
     method: 'get',
     }).then(res=>{
       list.value = res.names
-
       })
       const getName = (key) => {
-        console.log(key);
       // 监视点击的歌曲名称，携带名称进行请求
       router.push({
         path:'/music',
         query:{
           name:key,
-          list:list.value        
           }
       })
         
