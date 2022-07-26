@@ -36,7 +36,7 @@ export default {
     let time = ref(null)
 
     const endMusic = (back) =>{
-      console.log(localStorage.getItem('MusicName'), '播放完毕后');
+      // console.log(localStorage.getItem('MusicName'), '播放完毕后');
       if (list.value.indexOf(localStorage.getItem('MusicName'))+1 != list.value.length){
       back(list.value[list.value.indexOf(localStorage.getItem('MusicName'))+1])}else{useRoute.query.name}
 

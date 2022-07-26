@@ -7,7 +7,7 @@ from rest_framework import status
 from rest_framework.decorators import api_view
 import base64
 
-filePath = r"D:\musics"
+filePath = r"C:\musics"
 
 @api_view(['GET'])
 def music_list(request):
