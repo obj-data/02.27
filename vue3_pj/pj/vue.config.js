@@ -1,7 +1,7 @@
 module.exports = {   // 关闭严格模式
   lintOnSave:false, 
   devServer: {
-    host:"0.0.0.0",
+    host:'localhost',
     port: '8080',
     // https: false
     open: true,

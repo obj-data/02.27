@@ -1,10 +1,10 @@
 <template>
   <div class="player">
     <div class="audio">
-    <button class="operation"  @click=""><img class="edit" src="../../assets/player/last.png" alt="" ></button> 
+    <button class="operation"  @click="last"><img class="edit" src="../../assets/player/last.png" alt="" ></button> 
     <button class="operation" v-if="playBoo" @click="play"><img src="../../assets/player/play.png" alt="" ></button> 
     <button class="operation" v-else @click="stop"><img src="../../assets/player/stop.png" alt=""></button>
-    <button class="operation"  @click=""><img class="edit" src="../../assets/player/next.png" alt="" ></button> 
+    <button class="operation"  @click="next"><img class="edit" src="../../assets/player/next.png" alt="" ></button> 
     </div>
     <span>{{name}}</span>
   </div>
@@ -33,7 +33,10 @@ export default {
       audio.pause()
       playBoo.value = !playBoo.value
     }
-    audio.addEventListener('ended',()=>{
+    // 下一首
+    const next = () => {
+      audio.pause()
+      console.log('下一首');
       playBoo.value = !playBoo.value
       let nextName = null
       context.emit('eventEnd',(nextName)=>{
@@ -45,12 +48,35 @@ export default {
       audio.autoplay = true
       audio.play()
       playBoo.value = !playBoo.value
+    }
+    // 捕抓结束事件，结束后条用父组件的方法获取下一首歌名
+    audio.addEventListener('ended',()=>{
+      next()
     })
+    // 上一首
+    const last = () => {
+      audio.pause()
+      console.log('上一首');
+      playBoo.value = !playBoo.value
+      let lastName = null 
+      context.emit('LastName', (lastName)=>{
+        name.value = lastName
+        audio.src = 'http://127.0.0.1:8000/music/list/'+lastName
+        audio.load()
+        localStorage.setItem('MusicName', lastName)
+    })
+      audio.autoplay = true
+      audio.play()
+      playBoo.value = !playBoo.value
+    }
+
     return{
       name,
       playBoo,
       play,
-      stop
+      stop,
+      last,
+      next
 
     }
     

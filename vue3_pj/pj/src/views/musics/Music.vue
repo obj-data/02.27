@@ -1,7 +1,7 @@
 <template>
 <!-- 歌曲信息页面 -->
 <h3 style="color:#FFF;margin: 0 40%;" :key="i" v-for="i in [...Array(50).keys()]">歌曲详情页面</h3>
-<Player @eventEnd="endMusic" :name="name" class="player"/>
+<Player @eventEnd="endMusic" @LastName="lastOne" :name="name" class="player"/>
 
   <div class="index">
 
@@ -34,9 +34,12 @@ export default {
     let tar = ref(true)
     let num = ref(0)
     let time = ref(null)
-
+    // 获取上一首
+    const lastOne = (lastName) => {
+      lastName(list.value[list.value.indexOf(localStorage.getItem('MusicName'))-1])
+    }
     const endMusic = (back) =>{
-      // console.log(localStorage.getItem('MusicName'), '播放完毕后');
+      // 如果当前歌曲不是最后一首，就提取下一首
       if (list.value.indexOf(localStorage.getItem('MusicName'))+1 != list.value.length){
       back(list.value[list.value.indexOf(localStorage.getItem('MusicName'))+1])}else{useRoute.query.name}
 
@@ -44,7 +47,8 @@ export default {
    
     return {
       name,
-      endMusic
+      endMusic,
+      lastOne
 }
   },
 }
